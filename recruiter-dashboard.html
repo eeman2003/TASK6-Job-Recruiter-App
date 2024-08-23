@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Dashboard</title>
+    <link rel="stylesheet" href="css/recruiter.css">
+    <link rel="stylesheet" href="./css/logout.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Recruiter Dashboard</h1>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </div>
+        
+        <div class="dashboard">
+            <div id="notificationsList" class="notifications">
+                <!-- Notifications will be injected here -->
+            </div>
+            <button class="btn" id="postJobBtn">Post a Job</button>
+            <button class="btn btn-secondary" id="viewJobsBtn">View Posted Jobs</button>
+        </div>
+        <div id="jobList" class="job-list"></div>
+
+        <br>
+        <h1>My Job Applications</h1>
+        <div id="applicationsList" class="applications-list">
+            <!-- Applications will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <script src="js/recruiter.js"></script>
+    <script src="js/job-applications.js"></script>
+    <script src="js/recruiter-dashboard.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</body>
+</html>
